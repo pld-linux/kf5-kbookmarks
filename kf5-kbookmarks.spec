@@ -1,15 +1,15 @@
-%define		kdeframever	5.59
+%define		kdeframever	5.65
 %define		qtver		5.9.0
 %define		kfname		kbookmarks
 
 Summary:	Web browser bookmark management
 Name:		kf5-%{kfname}
-Version:	5.59.0
+Version:	5.65.0
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	http://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	f9da440968a94d4618b293837ab0b729
+# Source0-md5:	28f9f957fd9b23560d7645943b14a5e4
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5DBus-devel >= %{qtver}
@@ -97,7 +97,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc README.md
 %attr(755,root,root) %ghost %{_libdir}/libKF5Bookmarks.so.5
 %attr(755,root,root) %{_libdir}/libKF5Bookmarks.so.*.*
-/etc/xdg/kbookmarks.categories
+%{_datadir}/qlogging-categories5/kbookmarks.categories
 
 %files devel
 %defattr(644,root,root,755)
