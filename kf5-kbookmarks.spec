@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeframever	5.97
+%define		kdeframever	5.98
 %define		qtver		5.15.2
 %define		kfname		kbookmarks
 
 Summary:	Web browser bookmark management
 Name:		kf5-%{kfname}
-Version:	5.97.0
-Release:	2
+Version:	5.98.0
+Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	5836416fb862f7957dfaa08e88beb1b0
+# Source0-md5:	e50acdede03ef37c39719efdd74fd9ab
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5DBus-devel >= %{qtver}
